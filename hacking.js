@@ -1,2 +1,1 @@
-fsd + sda 
-;
+window.location = window.location.href
