@@ -76,7 +76,7 @@
                         </li>
                         <br>
                         
-                        <li>Ho lavorato quotidianamente su progetti con 70k+ linee di codice, di cui la maggior parte ho scritto 
+                        <li>Ho lavorato quotidianamente su progetti con 60k+ linee di codice, di cui la maggior parte ho scritto 
                             e creato la struttura io stesso.
                         </li>
                         <br>
@@ -159,7 +159,9 @@
                             ha certi privilegi e non altri. Un account dovrebbe vedere, o non vedere, 
                             alcuni menu, pagine o elementi di una pagina, sia per una questione di sicurezza e privacy aziendale, 
                             sia di organizzazione per l'utente - un account deve vedere solo quello che ha il permesso di vedere, 
-                            e quello che gli interessa vedere.
+                            e quello che gli interessa vedere. Scopri come ho strutturato sia il pannello di controllo per permettere
+                            agli admin di aggiungere o revocare in un solo click l'accesso a menu, pagine e componenti di pagine, 
+                            e come ho strutturato il database con processi formali.
                         </li>
                         <br>
                         <li>
@@ -174,8 +176,7 @@
                         <br>
                         <li>
                             <a href="https://docs.google.com/document/d/1ekKzh6COVfP-xj1aa180_L2wxvOEgsK52cVxMcXz-VQ/edit?usp=sharing" target="_blank">
-                                Dipendenti da pagare
-                            </a>
+                                Dipendenti da pagare.</a>
                             Ci sono N societa'. Ogni societa' ha N committenti. Ogni committente ha N dipendenti. 
                             Ogni dipendente puo' essere in malattia, e in questo caso
                             deve aspettare di essere pagato fin quando la consulenza del lavoro non assegna il valore della malattia.
@@ -187,42 +188,55 @@
                         <li>
                             <a href="https://docs.google.com/document/d/1sCsY4DekUNpjjTVQ59ZQHYcvoeyrEyTF2UV0eUMP_-w/edit?usp=sharing" target="_blank">
                                 Fatturato del mese.</a>
+                            In un dato mese, ci sono N committenti attivi. Ogni committente attivo ha M specifiche, con M >= 0. 
+                            Mostra i totali fattura dei committenti attivi in un dato mese, e indica anche se quel committente, in quell'anno e mese,
+                            e' pagato. Si definisce pagato: Se il committente non ha specifiche (quindi M = 0) in quel dato mese,
+                            allora si definisce pagato solo se esiste la conferma al pagamento a livello mensile. 
+                            Se invece ha specifiche (M > 0) in quel mese, allora ognuna delle M specifiche 
+                            deve avere la conferma al pagamento (che quindi sara' a livello di specifica e non mensile). 
+                            Solo in quest'ultimo caso, indica anche quante delle M specifiche sono pagate, sulle M specifiche. 
+                            Scopri come ho risolto uno dei problemi piu' importanti della societa', 
+                            come ho concettualizzato uno dei miei algoritmi piu' sofisticati, 
+                            che il presidente stesso della societa' usa ogni giorno per vedere informazioni vitali, 
+                            in un solo algoritmo SQL.
                         </li>
-                        In un dato mese, ci sono N committenti attivi. Ogni committente attivo ha M specifiche, con M >= 0. 
-                        Mostra i totali fattura dei committenti attivi in un dato mese, e indica anche se quel committente, in quell'anno e mese,
-                        e' pagato. Si definisce pagato: Se il committente non ha specifiche (quindi M = 0) in quel dato mese,
-                        allora si definisce pagato solo se esiste la conferma al pagamento a livello mensile. 
-                        Se invece ha specifiche (M > 0) in quel mese, allora ognuna delle M specifiche 
-                        deve avere la conferma al pagamento (che quindi sara' a livello di specifica e non mensile). 
-                        Solo in quest'ultimo caso, indica anche quante delle M specifiche sono pagate, sulle M specifiche. 
-                        Scopri come ho concettualizzato uno dei miei algoritmi piu' sofisticati, 
-                        che il presidente stesso della societa' usa ogni giorno per vedere, un solo algoritmo SQL.
                         <br>
                         <li>
                             <a href="https://docs.google.com/document/d/1cFvzYRuYyp1jujRlsEcifPpMhm39YhL5MQsf_Eu_yp0/edit?usp=sharing" target="_blank">
-                                Fatturato per regione
-                            </a>
+                                Fatturato per regione.</a>
+                            Un'interfaccia pulita e intuitiva per vedere il fatturato mensile suddiviso per regione e macroregione d'Italia, 
+                            in qualche click.
                         </li>
+                        <br>
                         <li>
                             <a href="https://docs.google.com/document/d/1DAu1DsKmLDWvkcc5GtQnX-dnCqIKJhQUOEnex5w0hVo/edit?usp=sharing" target="_blank">
-                                Fatturazione
-                            </a>
+                                Fatturazione.</a>
+                            L'intero sistema di fatturazione aziendale, collegato con la malattia e bonus dei dipendenti e
+                            al pagamento dei dipendenti dei committenti fatturati.
+                            Formalmente, permette di fatturare per N societa', con T opzioni di iva, per M committenti, in un anno X e mese Y, 
+                            in cui ci possono essere Z documenti per 3 tipi di documento (specifiche, proforme, note). 
+                            Saranno in tutto 7k linee di codice in 4 linguaggi di programmazione. 
+                            Scopri come ho costruito questa architettura logica che manda avanti intere societa'.
                         </li>
+                        <br>
                         <li>
                             <a href="https://docs.google.com/document/d/1TXoW5EsUbfysE93DfTX_b-7-KYGmT-hVG5FKVHrP1m0/edit?usp=sharing" target="_blank">
                                 Provvigioni
                             </a>
                         </li>
+                        <br>
                         <li>
                             <a href="https://docs.google.com/document/d/1FU9iXBwgOOEOdpRknt-g7yU-DQiWbg-9p9RBmxRh4PU/edit?usp=sharing" target="_blank">
                                 Recupero crediti
                             </a>
                         </li>
+                        <br>
                         <li>
                             <a href="https://docs.google.com/document/d/185gPcWQbhY7KuBa5qT3GEuWjABUgWRzizVmhMlcLCLI/edit?usp=sharing" target="_blank">
                                 Ricerca remota (libreria)
                             </a>
                         </li>
+                        <br>
 
                     </ul>
                 </div>
