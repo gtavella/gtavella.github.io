@@ -153,8 +153,7 @@
                     <ul>
                         <li>
                             <a href="https://docs.google.com/document/d/1FTDsY3VJbNkrdg3M9iEkkRwqxD1_WnTKrQWDffmXQ1o/edit?usp=sharing" target="_blank">
-                                Accessi
-                            </a>
+                                Accessi.</a>
                             Un gestionale aziendale viene utilizzato ogni giorno da tante persone. 
                             Ogni persona ha un ruolo specifico nell'azienda, fa un certo lavoro, gli interessano certe cose e non altre, 
                             ha certi privilegi e non altri. Un account dovrebbe vedere, o non vedere, 
@@ -165,8 +164,7 @@
                         <br>
                         <li>
                             <a href="https://docs.google.com/document/d/1-XfZkA48hQLM3P-x1gHKjYWkayjK0zmhuZ8GQ0KfhgA/edit?usp=sharing" target="_blank">
-                                Conferme.
-                            </a>
+                                Conferme.</a>
                             L'azienda ha bisogno di tenere traccia di quali clienti sono stati fatturati, hanno la presenza e il pagamento.
                                 Presenza e fattura hanno livello di dettaglio mensile, mentre il pagamento puo' essere sia mensile (se non esistono specifiche)
                                 oppure per specifica (se esistono specifiche). Ho formalizzato questi concetti aziendali in codice dichiarativo e
@@ -188,9 +186,18 @@
                         <br>
                         <li>
                             <a href="https://docs.google.com/document/d/1sCsY4DekUNpjjTVQ59ZQHYcvoeyrEyTF2UV0eUMP_-w/edit?usp=sharing" target="_blank">
-                                Fatturato del mese
-                            </a>
+                                Fatturato del mese.</a>
                         </li>
+                        In un dato mese, ci sono N committenti attivi. Ogni committente attivo ha M specifiche, con M >= 0. 
+                        Mostra i totali fattura dei committenti attivi in un dato mese, e indica anche se quel committente, in quell'anno e mese,
+                        e' pagato. Si definisce pagato: Se il committente non ha specifiche (quindi M = 0) in quel dato mese,
+                        allora si definisce pagato solo se esiste la conferma al pagamento a livello mensile. 
+                        Se invece ha specifiche (M > 0) in quel mese, allora ognuna delle M specifiche 
+                        deve avere la conferma al pagamento (che quindi sara' a livello di specifica e non mensile). 
+                        Solo in quest'ultimo caso, indica anche quante delle M specifiche sono pagate, sulle M specifiche. 
+                        Scopri come ho concettualizzato uno dei miei algoritmi piu' sofisticati, 
+                        che il presidente stesso della societa' usa ogni giorno per vedere, un solo algoritmo SQL.
+                        <br>
                         <li>
                             <a href="https://docs.google.com/document/d/1cFvzYRuYyp1jujRlsEcifPpMhm39YhL5MQsf_Eu_yp0/edit?usp=sharing" target="_blank">
                                 Fatturato per regione
