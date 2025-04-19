@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Per Artigiani</title>
+  <style>
+    :root {
+      --verde: #234e4e;
+      --beige: #f0e9dc;
+      --legno: #a67c52;
+      --bianco: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--beige);
+      color: var(--verde);
+    }
+
+    header {
+      background-color: var(--legno);
+      color: var(--bianco);
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.6rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: var(--bianco);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .quote {
+      text-align: center;
+      font-size: 1.1rem;
+      font-style: italic;
+      margin-top: 4rem;
+      color: var(--legno);
+    }
+
+    footer {
+      background-color: var(--verde);
+      color: var(--bianco);
+      text-align: center;
+      padding: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Ti perdi sempre gli eventi giusti per farti conoscere?</h1>
+  <p>Un'unica piattaforma per restare aggiornato, entrare in contatto con altri artigiani e trovare nuove occasioni per mostrare il tuo lavoro.</p>
+</header>
+
+<section>
+  <div class="grid">
+    <div class="card">
+      <h2>Partecipa agli eventi migliori</h2>
+      <p>Consulta il calendario con mercatini, fiere e laboratori in Calabria e oltre. Scegli quelli più adatti al tuo stile.</p>
+    </div>
+    <div class="card">
+      <h2>Connetti con altri artigiani</h2>
+      <p>Conosci colleghi di ogni età e settore. Condividi esperienze, collaborazioni e nuovi spunti creativi.</p>
+    </div>
+    <div class="card">
+      <h2>Fatti trovare facilmente</h2>
+      <p>Registrati nel portale per farti scoprire da imprenditori e organizzatori di eventi che cercano proprio il tuo talento.</p>
+    </div>
+    <div class="card">
+      <h2>Crea nuove opportunità</h2>
+      <p>Non solo visibilità: costruisci relazioni autentiche con chi valorizza davvero il tuo lavoro.</p>
+    </div>
+  </div>
+
+  <p class="quote">"Un artigiano senza rete resta invisibile. Qui puoi essere visto, apprezzato e scelto."</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Portale Artigiani – Connessioni vere, opportunità reali</p>
+</footer>
+
+</body>
+</html>
