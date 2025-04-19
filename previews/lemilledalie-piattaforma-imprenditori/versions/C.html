@@ -3,106 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portale Artigiani & Imprenditori</title>
+  <title>Connessioni Autentiche</title>
   <style>
     :root {
-      --terracotta: #d48c68;
-      --olive: #6a7f4e;
-      --beige: #f5f0e3;
-      --dark: #3a2e2a;
+      --indigo: #3e3a6d;
+      --sand: #e6d9c0;
+      --clay: #bfa888;
+      --white: #fffdf9;
     }
 
     body {
       margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-      background-color: var(--beige);
-      color: var(--dark);
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--white);
+      color: var(--indigo);
     }
 
     header {
-      background-color: var(--terracotta);
-      color: white;
-      padding: 4rem 2rem;
+      background-color: var(--clay);
+      color: var(--indigo);
+      padding: 5rem 2rem;
       text-align: center;
     }
 
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       margin-bottom: 1rem;
     }
 
     header p {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       max-width: 600px;
       margin: 0 auto;
     }
 
     section {
-      padding: 4rem 2rem;
       max-width: 900px;
       margin: 0 auto;
+      padding: 4rem 2rem;
     }
 
-    section h2 {
-      color: var(--olive);
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
     }
 
-    .block {
-      margin-bottom: 3rem;
+    .card {
+      background-color: var(--sand);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
     }
 
-    .question {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin-bottom: 0.5rem;
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .quote {
+      text-align: center;
+      font-size: 1.2rem;
+      font-style: italic;
+      margin-top: 4rem;
+      color: var(--clay);
     }
 
     footer {
-      background-color: var(--olive);
+      background-color: var(--indigo);
       color: white;
       text-align: center;
       padding: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Hai un borgo da rivitalizzare?</h1>
-  <p>Connetti artigiani e imprenditori. Crea eventi unici. Valorizza i tuoi spazi con autenticità.</p>
+  <h1>La tua rete di fiducia tra artigiani e imprenditori</h1>
+  <p>Un ecosistema semplice per organizzare eventi, valorizzare spazi e far crescere il tuo impatto sul territorio.</p>
 </header>
 
 <section>
-  <div class="block">
-    <div class="question">Sei stanco di spazi vuoti e poco valorizzati?</div>
-    <p>Aiutiamo imprenditori come te a trasformare borghi e locali in punti di riferimento culturali e creativi.</p>
+  <div class="grid">
+    <div class="card">
+      <h2>Perché non trovi artigiani affidabili?</h2>
+      <p>Scopri profili verificati, suddivisi per stile, categoria e disponibilità. Scegli chi valorizza davvero il tuo evento.</p>
+    </div>
+    <div class="card">
+      <h2>Hai spazi vuoti e idee ferme?</h2>
+      <p>Apri le porte a eventi unici: artigianato, poesia, cibo e cultura. Coinvolgi persone vere, crea valore reale.</p>
+    </div>
+    <div class="card">
+      <h2>Artigiano in cerca di visibilità?</h2>
+      <p>Un’unica vetrina per accedere a tutti gli eventi della regione e farti trovare da chi cerca proprio te.</p>
+    </div>
+    <div class="card">
+      <h2>Niente più chiamate infinite</h2>
+      <p>Tutto in un solo luogo: contatti, selezione artigiani, calendario eventi. Meno complicazioni, più risultati.</p>
+    </div>
   </div>
 
-  <div class="block">
-    <div class="question">Non sai dove trovare artigiani affidabili?</div>
-    <p>Con il nostro portale, puoi selezionare artigiani in base allo stile del tuo spazio o evento.</p>
-  </div>
-
-  <div class="block">
-    <div class="question">Vuoi partecipare a eventi ma non sai dove cercarli?</div>
-    <p>Se sei un artigiano, scopri tutti gli eventi in programma nella tua regione e oltre.</p>
-  </div>
-
-  <div class="block">
-    <h2>Facciamo accadere cose reali</h2>
-    <p>Mettiamo in contatto artigiani e imprenditori. Aiutiamo a far crescere visibilità, vendite e connessioni autentiche.</p>
-  </div>
-
-  <div class="block">
-    <h2>Più di un portale</h2>
-    <p>È una rete. È una comunità. È il tuo prossimo evento di successo.</p>
-  </div>
+  <p class="quote">"Non è solo un portale. È dove le connessioni diventano opportunità."</p>
 </section>
 
 <footer>
-  <p>Portale Artigiani & Imprenditori – Crea. Connetti. Valorizza.</p>
+  <p>&copy; 2025 Connessioni Autentiche – Artigiani & Imprenditori in rete</p>
 </footer>
 
 </body>
