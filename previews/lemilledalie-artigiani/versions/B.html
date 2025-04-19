@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spazio per Artigiani</title>
+  <style>
+    :root {
+      --blu-scuro: #2c3e50;
+      --ocra: #d4a373;
+      --panna: #fdf6ec;
+      --bianco: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: var(--panna);
+      color: var(--blu-scuro);
+    }
+
+    header {
+      background: linear-gradient(to right, var(--ocra), var(--bianco));
+      color: var(--blu-scuro);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: var(--bianco);
+      flex: 1 1 45%;
+      padding: 2rem;
+      border-radius: 8px;
+      border: 1px solid #eee;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.3rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .quote {
+      margin-top: 3rem;
+      text-align: center;
+      font-style: italic;
+      color: var(--ocra);
+      font-size: 1rem;
+    }
+
+    footer {
+      background-color: var(--blu-scuro);
+      color: var(--bianco);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Non trovi mai il posto giusto per esporre le tue creazioni?</h1>
+  <p>Abbiamo costruito uno spazio digitale dove puoi incontrare altri artigiani, partecipare a eventi reali e farti notare da chi organizza e valorizza davvero il tuo lavoro.</p>
+</header>
+
+<section>
+  <div class="grid">
+    <div class="card">
+      <h2>Accedi al calendario degli eventi</h2>
+      <p>Scopri subito dove, quando e come partecipare. Entra in eventi pensati per chi crea con le mani e col cuore.</p>
+    </div>
+    <div class="card">
+      <h2>Una community che ti somiglia</h2>
+      <p>Condividi ispirazioni, esperienze e consigli con artigiani come te, di tutte le età e discipline.</p>
+    </div>
+    <div class="card">
+      <h2>Visibilità continua</h2>
+      <p>Attraverso il portale puoi farti notare da chi ha bisogno di te: organizzatori, imprenditori, enti locali.</p>
+    </div>
+    <div class="card">
+      <h2>Costruisci relazioni</h2>
+      <p>Più di un evento: crea legami che durano e fanno crescere la tua attività nel tempo.</p>
+    </div>
+  </div>
+
+  <p class="quote">"Quando ti trovano facilmente, il tuo lavoro parla per te."</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Artigiani in Rete – Ogni connessione è un’occasione</p>
+</footer>
+
+</body>
+</html>
