@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Le Mille Dali per Artigiane</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap');
+
+    :root {
+      --primary: #1f1f1f;
+      --accent: #e09f3e;
+      --bg: #fffaf2;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--bg);
+      color: var(--primary);
+      line-height: 1.6;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1518991791750-749f3b6b6c1f') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 6rem 2rem;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: auto;
+      font-weight: 300;
+    }
+
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 1.8rem;
+      color: var(--accent);
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      padding: 1.5rem;
+    }
+
+    .card h3 {
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .footer {
+      background: #f3eee8;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .highlight {
+      background: var(--accent);
+      color: white;
+      font-weight: bold;
+      padding: 1rem 1.5rem;
+      border-radius: 6px;
+      display: inline-block;
+      margin: 2rem auto;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Fai ciò che ami, guadagna come meriti</h1>
+      <p>Per tutte le artigiane che vogliono smettere di svendersi e iniziare a vendere davvero.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>I tuoi dolori, li conosciamo bene</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>💸 Reddito instabile</h3>
+        <p>Ogni mese è un'incognita. Non sai mai se guadagnerai abbastanza.</p>
+      </div>
+      <div class="card">
+        <h3>📦 Troppa gestione</h3>
+        <p>Produzione, marketing, clienti, spedizioni… sei da sola a fare tutto.</p>
+      </div>
+      <div class="card">
+        <h3>📱 Marketing frustrante</h3>
+        <p>Passi ore online, ma i like non si trasformano in vendite.</p>
+      </div>
+      <div class="card">
+        <h3>😓 Nessun supporto</h3>
+        <p>Ti manca un alleato commerciale serio che creda nel tuo valore.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>La nostra promessa</h2>
+    <p class="highlight">
+      Ti aiutiamo a ricevere richieste su misura, costanti, pagate in modo puntuale, senza dover promuoverti ogni giorno da sola.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Value Proposition</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>🎯 Target preciso</h3>
+        <p>Lavoriamo solo con clienti che vogliono lavori unici e sono disposti a pagarli bene.</p>
+      </div>
+      <div class="card">
+        <h3>📬 Richieste automatiche</h3>
+        <p>Ricevi ordini che si adattano alla tua disponibilità e stile, senza cercarli.</p>
+      </div>
+      <div class="card">
+        <h3>🤝 Supporto costante</h3>
+        <p>Ti seguiamo passo dopo passo nella gestione, contrattazione e spedizione.</p>
+      </div>
+      <div class="card">
+        <h3>🔒 Serietà e tutela</h3>
+        <p>I tuoi compensi sono garantiti e tracciati. Niente più lavori sottopagati o clienti spariti.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Pronta a fare il salto?</h2>
+    <p class="highlight">
+      Entra in Le Mille Dali. Trasforma il tuo talento in un’attività vera.
+    </p>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Le Mille Dali – Artigianato che vale
+  </div>
+
+</body>
+</html>
